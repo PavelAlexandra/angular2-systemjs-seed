@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular App</title>
+    <!-- 1. Load libraries -->       
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>        
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    <!-- Chart library -->
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+    <!-- Polyfill(s) for older browsers -->    
+    <script "text/javascript" src="node_modules/core-js/client/shim.min.js"></script>
+    <script type="text/javascript" src="node_modules/zone.js/dist/zone.js"></script>
+    <script type="text/javascript" src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script type="text/javascript" src="node_modules/systemjs/dist/system.src.js"></script>
+
+      <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom App style -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- 2. Configure SystemJS -->
+    <script type="text/javascript" src="dist/systemjs.config.js"></script>
+    <script type="text/javascript">
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body class="hold-transition skin-blue sidebar-mini">
+    <my-app>Loading...</my-app>
+    <br/>
+</body>
+</html>
